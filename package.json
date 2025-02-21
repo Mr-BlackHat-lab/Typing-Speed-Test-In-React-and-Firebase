@@ -22,7 +22,6 @@
     "react-dom": "^19.0.0",
     "react-toastify": "^11.0.3",
     "serialize-javascript": "^6.0.2",
-    "styled-components": "^6.1.15",
     "svgo": "^3.3.2"
   },
   "devDependencies": {
