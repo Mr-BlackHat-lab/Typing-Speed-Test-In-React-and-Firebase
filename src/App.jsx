@@ -1,15 +1,13 @@
-import { useState } from 'react'
-
-
+import { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
-
   return (
     <>
-
-     hello
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
