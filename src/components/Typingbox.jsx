@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-var randomWords = require('random-words');
+
+import { generate, count } from "random-words";
 
 function Typingbox() {
   const [wordsArray, setWordsArray] = useState(() => {
-    return randomWords(50);
+    return generate(50);
   });
 
   return (
@@ -12,8 +13,8 @@ function Typingbox() {
         <div className="words">
           {wordsArray.map((word, index) => (
             <span key={index} className="word">
-              {word.split('').map((char, charIndex) => (
-                <span key={charIndex}>{char}</span>
+              {word.split('').map(char => (
+                <span>{char}</span>
               ))}
             </span>
           ))}
