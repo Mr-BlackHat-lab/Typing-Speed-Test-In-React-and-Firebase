@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Style/Typing.css";
 
 import { generate, count } from "random-words";
 
